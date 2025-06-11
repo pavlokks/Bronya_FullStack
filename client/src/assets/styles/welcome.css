@@ -1,0 +1,208 @@
+@import url('app.css');
+
+.welcome {
+  padding: 32px 0;
+  position: relative;
+  background: var(--background-color);
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.welcome-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.welcome-left-top h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.welcome-left-top p {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.welcome-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.welcome-btns .btn-primary {
+  background: var(--primary-color);
+  color: var(--accent-color);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-btns .btn-secondary {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-cities {
+  position: relative;
+  max-width: 600px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.city-card {
+  background: var(--accent-color);
+  border-radius: 12px;
+  padding: 12px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: scale(1.05);
+}
+
+.city-card span {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.city-card .state {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.city-0 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: scale(1.2);
+}
+.city-1 {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.city-2 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  transform: scale(1.3);
+}
+.city-3 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.city-4 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+.city-5 {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: scale(1.15);
+}
+
+@media (max-width: 1024px) {
+  .welcome-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-left {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .welcome-btns {
+    justify-content: center;
+  }
+
+  .welcome-left-top h1 {
+    font-size: 32px;
+  }
+
+  .welcome-left-top p {
+    font-size: 16px;
+  }
+
+  .welcome-cities {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-cities {
+    max-width: 450px;
+    height: 300px;
+  }
+
+  .welcome-left-top h1 {
+    font-size: 28px;
+  }
+
+  .welcome-left-top p {
+    font-size: 14px;
+  }
+
+  .welcome-btns .btn-primary,
+  .welcome-btns .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .city-card {
+    padding: 10px 16px;
+  }
+
+  .city-card span {
+    font-size: 14px;
+  }
+
+  .city-card .state {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-cities {
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .city-card {
+    padding: 8px 12px;
+  }
+
+  .city-card span {
+    font-size: 12px;
+  }
+
+  .city-card .state {
+    font-size: 8px;
+  }
+}

@@ -1,0 +1,122 @@
+.circles {
+  width: 20px;
+  height: 20px;
+  background-color: #2e7d32;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.circles.hover {
+  background-color: #27632a;
+}
+
+.circlesText {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Victor Mono', monospace;
+}
+
+.mminfoTab {
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.mmcard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mmcard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+.mmcard-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3c34;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0.25rem 0 0 0;
+  font-family: 'Victor Mono', monospace;
+}
+
+.mmcard-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+}
+
+.mmcard-img {
+  max-width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+}
+
+.mmcard .mmuno-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  color: #6b7280;
+  font-size: 1rem;
+  font-family: 'Victor Mono', monospace;
+  height: 80px;
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+}
+
+.mmcard-text {
+  font-size: 0.875rem;
+  color: #374151;
+  margin: 0.1rem 0;
+}
+
+.mmcard-actions {
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mmbtn-primary {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-family: 'Victor Mono', monospace;
+  transition: background-color 0.3s;
+}
+
+.mmbtn-primary:hover {
+  background-color: #27632a;
+}
+
+.mmbtn-primary:disabled {
+  background-color: #c8e0c9;
+  color: #6b7280;
+  cursor: not-allowed;
+}
